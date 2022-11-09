@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./partials/head %> 
+    <link rel='stylesheet' href='/styles/signup.css' />
+</head>
+<body>
+	<div class="outer_container">
+		<div class="signup_container">
+			<div class="signup_align">
+				<form name="login" action="" method="post" onsubmit="return login_validation()">
+					<div class="signup_heading"  style="color:white;">Login</div>
+						<div class="error_message">
+                            <!-- ONLY POPULATED IN CASE OF AN ERROR -->
+                        </div>
+						<div class="row">
+							<div class="inline_block">
+								<div class="form_label">Username</div>
+								<input class="input_field" type="text" name="username" id="username">
+								<div>
+									<span class=" error" id="username_info"></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="inline_block">
+								<div class="form_label">Password</div>
+								<input class="input_field" type="password" name="login_password" id="login_password">
+								<div>
+									<span class=" error" id="login_password_info"></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<input class="btn btn-dark" type="submit" name="login_btn" id="login_btn" value="Login Now" onclick="submitForm()">
+						</div>
+				</form>
+			</div>
+			<div class="signup_login_button">
+				<a href="/register" style="color:white">Not a member? <span style="text-decoration: underline;">Signup now</span></a>
+			</div>
+		</div>
+	</div>
+
+<!-- Include our custom js file + jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/javascripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* version 3.0 table added */
+.outer_container {
+	font-family: Arial, sans-serif;
+	font-size:25px;
+	width: 740px;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+}
+.outer_container table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+.outer_container td, .outer_container th {
+	padding: 8px;
+	text-align: left;
+}
+.outer_container h1 {
+	font-weight: normal;
+}
+input[type=text].php-input, .outer_container input,
+	.outer_container textarea, .outer_container select, .php-input,
+	.php-select {
+	box-sizing: border-box;
+	width: 500px;
+	height: initial;
+	padding: 8px 5px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}
+.outer_container input[type="checkbox"] {
+	width: auto;
+	vertical-align: text-bottom;
+	display: initial;
+	opacity: initial;
+	position: inherit;
+	pointer-events: initial;
+}
+
+.outer_container textarea, .php-textarea {
+	width: 300px;
+}
+
+.outer_container select, .php-select {
+	display: initial;
+	height: 30px;
+	background-color: #fff;
+	padding: 2px 5px;
+}
+
+.outer_container button, .outer_container input[type=submit] {
+	padding: 19px 0px;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 3px;
+	color: #565656;
+	font-weight: bold;
+	background-color: #ffc72c;
+	border-color: #ffd98e #ffbe3d #de9300;
+}
+
+.outer_container button, .outer_container input[type=submit]:hover {
+	background-color: #f7c027;
+}
+
+.outer_container button:focus {
+	outline: none;
+}
+
+.outer_container .php-row {
+	padding-top: 15px;
+}
+
+#php-message {
+	padding: 6px 20px;
+	font-size: 1em;
+	color: rgb(40, 40, 40);
+	box-sizing: border-box;
+	margin: 0px;
+	border-radius: 3px;
+	width: 100%;
+	overflow: auto;
+}
+
+.outer_container .error {
+	padding: 6px 20px;
+	border-radius: 3px;
+	background-color: #fb817c;
+	border: 1px solid #e46b66;
+}
+
+.outer_container .success {
+	background-color: #48e0a4;
+	border: #40cc94 1px solid;
+}
+
+#php-loader-icon {
+	color: #1871e6;
+	font-weight: bold;
+	padding: 6px 20px 6px 0;
+	display: none;
+	vertical-align: middle;
+}
+
+#php-loader-ack-icon {
+	color: #1871e6;
+	font-weight: bold;
+	padding: 6px 20px 6px 0;
+	display: none;
+	vertical-align: middle;
+}
+
+#php-btn-send:hover {
+	background: #1363cc;
+	border: #105bbd 1px solid;
+}
+
+.outer_container .validation-message {
+	color: #e20900;
+	display: inline-block;
+}
+
+.outer_container .label {
+	margin-bottom: 3px;
+}
+
+.php-form, .php-section {
+	border: #eaeaea 1px solid;
+	padding: 10px 25px 10px 30px;
+	border-radius: 3px;
+}
+
+.outer_container .display-none {
+	display: none;
+}
+
+.icon-add-more-attachemnt {
+	cursor: pointer;
+	font-style: italic;
+	font-size: .9em;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+@media all and (max-width: 780px) {
+	.outer_container {
+		width: auto;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.outer_container {
+		padding: 0px 20px;
+	}
+	.outer_container h1 {
+		font-size: 1.2em;
+	}
+	.outer_container input, .outer_container textarea, .outer_container select
+		{
+		width: 100%;
+	}
+	.php-form {
+		border: none;
+		padding: 0;
+	}
+}
